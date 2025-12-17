@@ -30,6 +30,8 @@ class IngestionService:
             return False
 
         print("Dividindo documentos...")
+        #revisar para chuck semantico
+        #revisar para ingestão de milhares de documentos
         splitter = RecursiveCharacterTextSplitter(
             chunk_size=Config.CHUNK_SIZE,
             chunk_overlap=Config.CHUNK_OVERLAP
